@@ -1,12 +1,15 @@
 :root {
     --primary: #2e3852;
+    --primary-dark: #3f4d6e;
     --accent: #d67251;
     --completed: #f7f4e9;
     --light: #f4f4f4;
     --dark: #1a1a1a;
     --footer: #4a7c59;
+    --footer-dark: #3d6b4f;
     --white: #ffffff;
-    --shadow: rgba(0, 0, 0, 0.15);
+    --shadow: #00000026;
+    --nav-border: #ffffff33;
 }
 
 * {
@@ -76,7 +79,7 @@ nav ul {
 }
 
 nav li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid var(--nav-border);
 }
 
 nav li:last-child {
@@ -93,7 +96,7 @@ nav a {
 
 nav a:hover,
 nav a[aria-current="page"] {
-    background-color: rgba(255, 255, 255, 0.15);
+    background-color: var(--primary-dark);
 }
 
 main {
@@ -114,24 +117,22 @@ h2 {
     font-size: 1.1rem;
 }
 
-.about-section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    margin-bottom: 2rem;
+.about-section,
+.photo-section {
+    margin-bottom: 1.5rem;
 }
 
-.about-text p,
-.student-photo img {
+.about-section p,
+.photo-section img {
     background-color: var(--light);
 }
 
-.about-text p {
+.about-section p {
     margin: 0;
     padding: 1rem;
 }
 
-.student-photo img {
+.photo-section img {
     width: 100%;
     max-width: 280px;
     margin: 1rem auto;
@@ -189,6 +190,7 @@ h2 {
     margin: 0;
     font-weight: 700;
     font-size: 1.05rem;
+    color: var(--dark);
 }
 
 .course-card.completed {
@@ -199,10 +201,12 @@ h2 {
     text-align: center;
     font-style: italic;
     margin-top: 1.25rem;
+    color: var(--dark);
 }
 
 footer {
-    background: linear-gradient(135deg, var(--footer), #3d6b4f);
+    background-color: var(--footer);
+    background-image: linear-gradient(135deg, var(--footer), var(--footer-dark));
     color: var(--white);
     text-align: center;
     padding: 1.5rem 1rem;
@@ -210,6 +214,7 @@ footer {
 
 footer p {
     margin: 0.35rem 0;
+    color: var(--white);
 }
 
 .social-links {

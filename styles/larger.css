@@ -35,27 +35,45 @@
 
     nav a:hover,
     nav a[aria-current="page"] {
-        background-color: rgba(255, 255, 255, 0.15);
+        background-color: var(--primary-dark);
     }
 
     main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas:
+            "title title"
+            "about photo"
+            "certs certs";
+        gap: 1.5rem;
         max-width: 1100px;
         margin: 0 auto;
         padding: 0 2rem 2rem;
     }
 
-    .about-section {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 1.5rem;
-        align-items: start;
+    main h1 {
+        grid-area: title;
     }
 
-    .about-text p {
+    .about-section {
+        grid-area: about;
+        margin-bottom: 0;
+    }
+
+    .photo-section {
+        grid-area: photo;
+        margin-bottom: 0;
+    }
+
+    .certificate-section {
+        grid-area: certs;
+    }
+
+    .about-section p {
         min-height: 200px;
     }
 
-    .student-photo img {
+    .photo-section img {
         max-width: 100%;
     }
 
