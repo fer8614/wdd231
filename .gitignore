@@ -1,0 +1,12 @@
+# Cursor / local tooling
+.atl/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
