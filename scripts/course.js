@@ -86,4 +86,5 @@ filterButtons.forEach((button) => {
     });
 });
 
+
 displayCourses();
