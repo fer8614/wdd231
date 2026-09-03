@@ -1,25 +1,11 @@
-:root {
-    --primary: #2e3852;
-    --primary-dark: #3f4d6e;
-    --accent: #d67251;
-    --completed: #f7f4e9;
-    --light: #f4f4f4;
-    --dark: #1a1a1a;
-    --footer: #4a7c59;
-    --footer-dark: #3d6b4f;
-    --white: #ffffff;
-    --shadow: #00000026;
-    --nav-border: #ffffff33;
-}
-
 * {
     box-sizing: border-box;
 }
 
 body {
     font-family: "Source Sans 3", sans-serif;
-    color: var(--dark);
-    background-color: var(--white);
+    color: #1a1a1a;
+    background-color: #ffffff;
     line-height: 1.6;
 }
 
@@ -53,8 +39,8 @@ header {
 
 .menu-button {
     display: block;
-    background: var(--light);
-    border: 2px solid var(--dark);
+    background: #f4f4f4;
+    border: 2px solid #1a1a1a;
     border-radius: 4px;
     font-size: 1.5rem;
     line-height: 1;
@@ -75,11 +61,11 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    background-color: var(--primary);
+    background-color: #2e3852;
 }
 
 nav li {
-    border-bottom: 1px solid var(--nav-border);
+    border-bottom: 1px solid #ffffff33;
 }
 
 nav li:last-child {
@@ -89,14 +75,14 @@ nav li:last-child {
 nav a {
     display: block;
     padding: 0.85rem 1rem;
-    color: var(--white);
+    color: #ffffff;
     text-decoration: none;
     transition: background-color 0.2s ease;
 }
 
 nav a:hover,
 nav a[aria-current="page"] {
-    background-color: var(--primary-dark);
+    background-color: #3f4d6e;
 }
 
 main {
@@ -111,8 +97,8 @@ h1 {
 h2 {
     margin: 0;
     padding: 0.75rem 1rem;
-    background-color: var(--primary);
-    color: var(--white);
+    background-color: #2e3852;
+    color: #ffffff;
     text-align: center;
     font-size: 1.1rem;
 }
@@ -124,7 +110,7 @@ h2 {
 
 .about-section p,
 .photo-section img {
-    background-color: var(--light);
+    background-color: #f4f4f4;
 }
 
 .about-section p {
@@ -152,8 +138,8 @@ h2 {
 }
 
 .filter-btn {
-    background-color: var(--light);
-    border: 2px solid var(--dark);
+    background-color: #f4f4f4;
+    border: 2px solid #1a1a1a;
     border-radius: 8px;
     padding: 0.5rem 1.25rem;
     font-weight: 600;
@@ -163,8 +149,8 @@ h2 {
 
 .filter-btn:hover,
 .filter-btn.active {
-    background-color: var(--accent);
-    color: var(--dark);
+    background-color: #d67251;
+    color: #1a1a1a;
 }
 
 .filter-btn:active {
@@ -179,42 +165,42 @@ h2 {
 }
 
 .course-card {
-    background-color: var(--accent);
+    background-color: #d67251;
     border-radius: 12px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 2px 4px var(--shadow);
+    box-shadow: 0 2px 4px #00000026;
 }
 
 .course-card p {
     margin: 0;
     font-weight: 700;
     font-size: 1.05rem;
-    color: var(--dark);
+    color: #1a1a1a;
 }
 
 .course-card.completed {
-    background-color: var(--completed);
+    background-color: #f7f4e9;
 }
 
 .credit-summary {
     text-align: center;
     font-style: italic;
     margin-top: 1.25rem;
-    color: var(--dark);
+    color: #1a1a1a;
 }
 
 footer {
-    background-color: var(--footer);
-    background-image: linear-gradient(135deg, var(--footer), var(--footer-dark));
-    color: var(--white);
+    background-color: #4a7c59;
+    background-image: linear-gradient(135deg, #4a7c59, #3d6b4f);
+    color: #ffffff;
     text-align: center;
     padding: 1.5rem 1rem;
 }
 
 footer p {
     margin: 0.35rem 0;
-    color: var(--white);
+    color: #ffffff;
 }
 
 .social-links {
@@ -225,7 +211,7 @@ footer p {
 }
 
 .social-links a {
-    color: var(--white);
+    color: #ffffff;
     display: inline-flex;
     padding: 0.25rem;
     transition: opacity 0.2s ease;
@@ -238,5 +224,5 @@ footer p {
 .social-links svg {
     width: 36px;
     height: 36px;
-    fill: currentColor;
+    fill: #ffffff;
 }
