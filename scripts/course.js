@@ -11,7 +11,7 @@ const courses = [
         number: 111,
         title: "Programming with Functions",
         credits: 2,
-        completed: false
+        completed: true
     },
     {
         subject: "CSE",
