@@ -103,7 +103,7 @@
   }
   .member-directory.grid-view .member-card:hover {
     transform: translateY(-3px);
-    box-shadow: var(--shadow);
+    box-shadow: 0 12px 30px #18372c1c;
   }
 }
 
@@ -111,9 +111,8 @@
   html {
     scroll-behavior: auto;
   }
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
+  .menu-button span,
+  .member-card {
+    transition-duration: 0.01ms;
   }
 }

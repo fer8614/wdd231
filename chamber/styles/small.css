@@ -1,17 +1,6 @@
 :root {
-  --evergreen: #174a3a;
-  --evergreen-dark: #0e3428;
-  --iris: #6e4a8e;
-  --iris-dark: #503369;
-  --gold: #d39b35;
-  --cream: #f7f3ea;
-  --paper: #fffdf9;
-  --ink: #1d2925;
-  --muted: #58645f;
-  --line: #d8ded9;
-  --shadow: 0 12px 30px rgba(24, 55, 44, 0.11);
   color-scheme: light;
-  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Source Sans 3", Arial, sans-serif;
 }
 
 * {
@@ -25,8 +14,8 @@ html {
 
 body {
   min-width: 320px;
-  background: var(--paper);
-  color: var(--ink);
+  background: #fffdf9;
+  color: #1d2925;
   line-height: 1.6;
 }
 
@@ -35,17 +24,23 @@ img {
   max-width: 100%;
 }
 a {
-  color: var(--evergreen-dark);
+  color: #0e3428;
 }
 a:hover {
-  color: var(--iris-dark);
+  color: #503369;
 }
 button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Lora", Georgia, serif;
+}
+
 :focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid #d39b35;
   outline-offset: 3px;
 }
 
@@ -55,8 +50,8 @@ button {
   left: 0.5rem;
   z-index: 100;
   padding: 0.65rem 1rem;
-  background: var(--paper);
-  color: var(--evergreen-dark);
+  background: #fffdf9;
+  color: #0e3428;
   font-weight: 700;
   transform: translateY(-150%);
 }
@@ -68,9 +63,9 @@ button {
 .site-header {
   position: relative;
   z-index: 10;
-  border-bottom: 4px solid var(--gold);
-  background: var(--evergreen-dark);
-  color: white;
+  border-bottom: 4px solid #d39b35;
+  background: #0e3428;
+  color: #ffffff;
 }
 
 .header-inner {
@@ -84,14 +79,14 @@ button {
   max-width: calc(100% - 4rem);
   align-items: center;
   gap: 0.7rem;
-  color: white;
+  color: #ffffff;
   font-size: 0.95rem;
   line-height: 1.2;
   text-decoration: none;
 }
 
 .brand:hover {
-  color: white;
+  color: #ffffff;
 }
 .brand img {
   width: 48px;
@@ -103,7 +98,7 @@ button {
 }
 .brand strong {
   color: #f0c972;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, serif;
   font-size: 1.35rem;
 }
 
@@ -113,9 +108,9 @@ button {
   right: 1rem;
   width: 44px;
   height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: 1px solid #ffffff80;
   border-radius: 0.35rem;
-  background: transparent;
+  background: #00000000;
 }
 
 .menu-button span {
@@ -123,7 +118,7 @@ button {
   width: 23px;
   height: 2px;
   margin: 5px auto;
-  background: white;
+  background: #ffffff;
   transition:
     transform 0.2s ease,
     opacity 0.2s ease;
@@ -157,16 +152,16 @@ button {
   display: block;
   padding: 0.65rem 0.75rem;
   border-radius: 0.3rem;
-  color: white;
+  color: #ffffff;
   font-weight: 650;
   text-decoration: none;
 }
 .primary-navigation a:hover {
-  background: rgba(255, 255, 255, 0.12);
-  color: white;
+  background: #ffffff1f;
+  color: #ffffff;
 }
 .primary-navigation a[aria-current="page"] {
-  background: var(--gold);
+  background: #d39b35;
   color: #17251f;
 }
 
@@ -176,10 +171,8 @@ main {
 
 .page-intro {
   padding: 3rem 1rem 3.3rem;
-  background:
-    linear-gradient(120deg, rgba(14, 52, 40, 0.96), rgba(80, 51, 105, 0.9)),
-    var(--evergreen-dark);
-  color: white;
+  background: linear-gradient(120deg, #0e3428f5, #503369e6), #0e3428;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -195,7 +188,7 @@ main {
 .page-intro h1 {
   max-width: 800px;
   margin: 0 auto 0.5rem;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, serif;
   font-size: clamp(2rem, 9vw, 3.7rem);
   line-height: 1.1;
 }
@@ -214,20 +207,20 @@ main {
   display: grid;
   gap: 1rem;
   padding: 1.15rem;
-  border: 1px solid var(--line);
+  border: 1px solid #d8ded9;
   border-radius: 0.75rem;
-  background: white;
-  box-shadow: var(--shadow);
+  background: #ffffff;
+  box-shadow: 0 12px 30px #18372c1c;
 }
 
 .directory-toolbar h2 {
   margin: 0;
-  color: var(--evergreen-dark);
-  font-family: Georgia, "Times New Roman", serif;
+  color: #0e3428;
+  font-family: "Lora", Georgia, serif;
 }
 .directory-toolbar p {
   margin: 0.15rem 0 0;
-  color: var(--muted);
+  color: #58645f;
 }
 
 .view-toggle {
@@ -239,18 +232,18 @@ main {
   flex: 1;
   min-height: 44px;
   padding: 0.55rem 0.8rem;
-  border: 2px solid var(--evergreen);
+  border: 2px solid #174a3a;
   border-radius: 0.4rem;
-  background: white;
-  color: var(--evergreen-dark);
+  background: #ffffff;
+  color: #0e3428;
   font-weight: 750;
 }
 .view-button:hover {
   background: #eef5f1;
 }
 .view-button[aria-pressed="true"] {
-  background: var(--evergreen);
-  color: white;
+  background: #174a3a;
+  color: #ffffff;
 }
 .grid-icon {
   font-size: 1.25rem;
@@ -265,16 +258,16 @@ main {
 
 .member-card {
   overflow: hidden;
-  border: 1px solid var(--line);
+  border: 1px solid #d8ded9;
   border-radius: 0.75rem;
-  background: white;
-  box-shadow: 0 5px 16px rgba(24, 55, 44, 0.08);
+  background: #ffffff;
+  box-shadow: 0 5px 16px #18372c14;
 }
 
 .member-image-wrap {
   aspect-ratio: 16 / 9;
   overflow: hidden;
-  background: var(--cream);
+  background: #f7f3ea;
 }
 .member-image {
   width: 100%;
@@ -286,7 +279,7 @@ main {
 }
 .member-category {
   margin: 0 0 0.15rem;
-  color: var(--iris-dark);
+  color: #503369;
   font-size: 0.78rem;
   font-weight: 800;
   letter-spacing: 0.08em;
@@ -294,8 +287,8 @@ main {
 }
 .member-card h3 {
   margin: 0;
-  color: var(--evergreen-dark);
-  font-family: Georgia, "Times New Roman", serif;
+  color: #0e3428;
+  font-family: "Lora", Georgia, serif;
   font-size: 1.3rem;
   line-height: 1.25;
 }
@@ -305,7 +298,7 @@ main {
   padding: 0.18rem 0.55rem;
   border-radius: 999px;
   background: #eee8f4;
-  color: var(--iris-dark);
+  color: #503369;
   font-size: 0.72rem;
   font-weight: 800;
   letter-spacing: 0.04em;
@@ -329,7 +322,7 @@ main {
   overflow-wrap: anywhere;
 }
 .member-details strong {
-  color: var(--muted);
+  color: #58645f;
   font-size: 0.75rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -371,8 +364,8 @@ main {
 }
 
 .site-footer {
-  border-top: 5px solid var(--gold);
-  background: var(--evergreen-dark);
+  border-top: 5px solid #d39b35;
+  background: #0e3428;
   color: #f4f2ea;
 }
 .footer-inner {
@@ -385,14 +378,14 @@ main {
 .site-footer h2 {
   margin: 0 0 0.35rem;
   color: #f0c972;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "Lora", Georgia, serif;
   font-size: 1.2rem;
 }
 .site-footer address {
   font-style: normal;
 }
 .site-footer a {
-  color: white;
+  color: #ffffff;
 }
 .social-links {
   display: flex;
@@ -404,15 +397,15 @@ main {
   width: 44px;
   height: 44px;
   place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid #ffffff8c;
   border-radius: 50%;
-  color: white;
+  color: #ffffff;
   font-weight: 800;
   text-decoration: none;
 }
 .social-links a:hover {
-  background: white;
-  color: var(--evergreen-dark);
+  background: #ffffff;
+  color: #0e3428;
 }
 .project-info p {
   margin: 0.1rem 0;
