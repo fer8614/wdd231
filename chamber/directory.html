@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Business Directory | Keizer Chamber of Commerce</title>
+  <meta name="description" content="Explore trusted local businesses and services in the Keizer, Oregon Chamber of Commerce member directory.">
+  <meta name="author" content="Yesid Fernando Cepeda">
+  <meta property="og:title" content="Keizer Chamber of Commerce Business Directory">
+  <meta property="og:description" content="Find local businesses, services, and community partners serving Keizer, Oregon.">
+  <meta property="og:image" content="https://fer8614.github.io/wdd231/chamber/images/keizer-directory-og.png">
+  <meta property="og:url" content="https://fer8614.github.io/wdd231/chamber/directory.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to directory</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="directory.html" aria-label="Keizer Chamber of Commerce directory">
+        <img src="images/keizer-chamber-logo.svg" alt="" width="58" height="58">
+        <span><strong>Keizer</strong> Chamber of Commerce</span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#" aria-disabled="true" title="Home page coming in a future assignment">Home</a></li>
+          <li><a href="directory.html" aria-current="page">Directory</a></li>
+          <li><a href="#" aria-disabled="true" title="Join page coming in a future assignment">Join</a></li>
+          <li><a href="#" aria-disabled="true" title="Discover page coming in a future assignment">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro" aria-labelledby="directory-title">
+      <p class="eyebrow">Shop local. Grow together.</p>
+      <h1 id="directory-title">Keizer Business Directory</h1>
+      <p>Meet the businesses helping Oregon's Iris City thrive.</p>
+    </section>
+
+    <section class="directory-section" aria-labelledby="members-heading">
+      <div class="directory-toolbar">
+        <div>
+          <h2 id="members-heading">Our members</h2>
+          <p id="member-count">Loading member directory…</p>
+        </div>
+        <div class="view-toggle" role="group" aria-label="Choose directory layout">
+          <button id="grid-view" class="view-button" type="button" aria-pressed="true">
+            <span class="grid-icon" aria-hidden="true">▦</span> Grid
+          </button>
+          <button id="list-view" class="view-button" type="button" aria-pressed="false">
+            <span aria-hidden="true">☷</span> List
+          </button>
+        </div>
+      </div>
+      <div id="directory" class="member-directory grid-view" aria-live="polite" aria-busy="true"></div>
+      <div id="directory-error" class="directory-error" role="alert" hidden>
+        <h2>We couldn't load the directory.</h2>
+        <p>Please refresh the page or try again in a few moments. If the problem continues, call us at <a href="tel:+15033900000">(503) 390-0000</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Keizer Chamber of Commerce</h2>
+        <address>
+          930 Chemawa Road NE<br>
+          Keizer, OR 97303<br>
+          <a href="mailto:hello@keizerchamber.example">hello@keizerchamber.example</a><br>
+          <a href="tel:+15033900000">(503) 390-0000</a>
+        </address>
+      </section>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Keizer Chamber on Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Keizer Chamber on Instagram">◎</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Keizer Chamber on LinkedIn">in</a>
+      </nav>
+      <div class="project-info">
+        <p>WDD 231 Class Project</p>
+        <p>Yesid Fernando Cepeda</p>
+        <p>&copy; <span id="current-year"></span> Keizer Chamber of Commerce</p>
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

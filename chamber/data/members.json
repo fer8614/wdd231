@@ -1,0 +1,65 @@
+[
+  {
+    "name": "River Road Roasters",
+    "address": "3825 River Road N, Keizer, OR 97303",
+    "phone": "503-555-0101",
+    "website": "https://example.com/river-road-roasters",
+    "image": "river-road-roasters.jpg",
+    "membershipLevel": 3,
+    "category": "Coffee & Bakery"
+  },
+  {
+    "name": "Keizer Rapids Outfitters",
+    "address": "1900 Chemawa Road N, Keizer, OR 97303",
+    "phone": "503-555-0102",
+    "website": "https://example.com/keizer-rapids-outfitters",
+    "image": "keizer-rapids-outfitters.jpg",
+    "membershipLevel": 2,
+    "category": "Outdoor Recreation"
+  },
+  {
+    "name": "Cherry Avenue Auto Care",
+    "address": "4760 Cherry Avenue NE, Keizer, OR 97303",
+    "phone": "503-555-0103",
+    "website": "https://example.com/cherry-avenue-auto",
+    "image": "cherry-avenue-auto.jpg",
+    "membershipLevel": 1,
+    "category": "Automotive"
+  },
+  {
+    "name": "Claggett Creek Dental",
+    "address": "4490 River Road N, Keizer, OR 97303",
+    "phone": "503-555-0104",
+    "website": "https://example.com/claggett-creek-dental",
+    "image": "claggett-creek-dental.jpg",
+    "membershipLevel": 3,
+    "category": "Health & Wellness"
+  },
+  {
+    "name": "Iris City Florals",
+    "address": "4987 River Road N, Keizer, OR 97303",
+    "phone": "503-555-0105",
+    "website": "https://example.com/iris-city-florals",
+    "image": "iris-city-florals.jpg",
+    "membershipLevel": 2,
+    "category": "Florist & Gifts"
+  },
+  {
+    "name": "Wheatland Pet Supply",
+    "address": "5450 River Road N, Keizer, OR 97303",
+    "phone": "503-555-0106",
+    "website": "https://example.com/wheatland-pet-supply",
+    "image": "wheatland-pet-supply.jpg",
+    "membershipLevel": 1,
+    "category": "Pet Care"
+  },
+  {
+    "name": "McNary Tech Solutions",
+    "address": "3555 River Road N, Keizer, OR 97303",
+    "phone": "503-555-0107",
+    "website": "https://example.com/mcnary-tech-solutions",
+    "image": "mcnary-tech-solutions.jpg",
+    "membershipLevel": 3,
+    "category": "Technology Services"
+  }
+]
