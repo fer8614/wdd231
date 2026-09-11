@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap");
+
+:root {
+    --primary-color: #4d4d96;
+    --card-background: #b9b9ce;
+    --page-background: #ffffff;
+    --text-color: #222222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 320px;
+    margin: 0;
+    color: var(--text-color);
+    background: var(--page-background);
+    font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+h1,
+h2 {
+    margin: 0;
+    color: var(--primary-color);
+    font-family: "Roboto Slab", serif;
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+}
+
+main {
+    width: calc(100% - 2.5rem);
+    max-width: 1100px;
+    margin: 0.5rem auto 1rem;
+    padding: 1.2rem;
+    background: #f2f2f2;
+    box-shadow: 0 0 25px 10px rgb(0 0 0 / 20%);
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 4px;
+}
+
+#cards section {
+    display: flex;
+    min-width: 0;
+    padding: 1.25rem 0.75rem 0.75rem;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--card-background);
+    border: 1px solid var(--primary-color);
+}
+
+#cards h2 {
+    display: flex;
+    min-height: 3.5rem;
+    margin-bottom: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1.25rem, 2.2vw, 1.55rem);
+}
+
+#cards p {
+    width: 100%;
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+#cards p:first-of-type {
+    min-height: 2.3rem;
+}
+
+#cards img {
+    display: block;
+    width: 155px;
+    max-width: 80%;
+    height: 205px;
+    margin: 0.75rem auto 0;
+    object-fit: cover;
+    object-position: center top;
+    box-shadow: 0 0 12px 3px rgb(0 0 0 / 35%);
+}
+
+footer {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+@media (max-width: 900px) {
+    #cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    header {
+        padding-top: 0.75rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    main {
+        width: calc(100% - 2rem);
+        margin-top: 0.25rem;
+        padding: 1rem;
+    }
+
+    #cards {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    #cards section {
+        min-height: 275px;
+        padding-top: 1rem;
+    }
+
+    #cards h2 {
+        min-height: auto;
+        font-size: 1.25rem;
+    }
+
+    #cards p:first-of-type {
+        min-height: auto;
+    }
+
+    #cards img {
+        width: 130px;
+        height: 172px;
+        margin-top: 0.65rem;
+    }
+}
