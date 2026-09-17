@@ -90,6 +90,47 @@
   .project-info {
     justify-self: end;
   }
+
+  .hero-image {
+    height: clamp(24rem, 42vw, 32rem);
+  }
+  .hero-content {
+    inset: 0;
+    display: grid;
+    align-content: end;
+    justify-items: start;
+    max-width: 1100px;
+    margin-inline: auto;
+    padding: 3rem 1.25rem 3.25rem;
+    background: linear-gradient(90deg, #0e3428f0 0%, #0e3428cc 42%, #0e342800 78%);
+  }
+  .hero-content h1 {
+    max-width: 14ch;
+    font-size: clamp(2.3rem, 4vw, 3.4rem);
+  }
+  .hero-content p {
+    max-width: 34ch;
+    font-size: 1.1rem;
+  }
+
+  .home-panels {
+    grid-template-columns: 1.35fr 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .home-section {
+    padding: 1.4rem 1.5rem;
+  }
+
+  .spotlights-section {
+    margin-top: 1.75rem;
+  }
+
+  .spotlight-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+  }
 }
 
 @media (min-width: 68rem) {

@@ -3,8 +3,6 @@ const errorMessage = document.querySelector("#directory-error");
 const memberCount = document.querySelector("#member-count");
 const gridButton = document.querySelector("#grid-view");
 const listButton = document.querySelector("#list-view");
-const menuButton = document.querySelector("#menu-button");
-const navigation = document.querySelector("#primary-navigation");
 
 const membershipNames = {
   1: "Member",
@@ -114,28 +112,5 @@ function setView(view) {
 
 gridButton.addEventListener("click", () => setView("grid"));
 listButton.addEventListener("click", () => setView("list"));
-
-menuButton.addEventListener("click", () => {
-  const isOpen = menuButton.getAttribute("aria-expanded") === "true";
-  menuButton.setAttribute("aria-expanded", String(!isOpen));
-  menuButton.setAttribute(
-    "aria-label",
-    isOpen ? "Open navigation menu" : "Close navigation menu",
-  );
-  navigation.classList.toggle("open", !isOpen);
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && navigation.classList.contains("open")) {
-    navigation.classList.remove("open");
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Open navigation menu");
-    menuButton.focus();
-  }
-});
-
-document.querySelector("#current-year").textContent = new Date().getFullYear();
-document.querySelector("#last-modified").textContent =
-  `Last modified: ${document.lastModified}`;
 
 loadMembers();
