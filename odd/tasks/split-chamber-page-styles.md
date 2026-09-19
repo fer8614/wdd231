@@ -86,7 +86,42 @@ Page-specific stylesheets keep each page below the audit guideline, make ownersh
 - Parent declaration-count spot check: shared 149, home 160, directory 130; all below 250.
 - Parent `git diff --check`: passed.
 - Residual risk: no browser screenshot comparison was performed at mobile, 48rem, and 68rem widths.
+- Follow-up audit result: loaded home CSS still reports 270 declarations because the auditor aggregates all active linked stylesheets.
+
+### ODD-CSS-3 — Reduce loaded home declarations below 250
+
+- Status: completed
+- Route: delegated exploration, bounded writer, then independent verifier
+- Trigger: optimization spans shared and home stylesheets
+- Acceptance criteria:
+  - The audit-equivalent loaded home count is below 250.
+  - No visual design, responsive behavior, accessibility, or interactive state is removed.
+  - Existing structural equivalence exceptions are documented explicitly.
+- Checks:
+  - Count declarations using the auditor-equivalent loaded/active rule model.
+  - Run diagnostics, HTTP checks, and focused responsive visual review where available.
+
+## ODD-CSS-3 Progress
+
+- Consolidated repeated declarations in `shared.css` and `home.css` without removing protected selectors or states.
+- First consolidation reduced authored declarations from 370 to 313; the final consolidation reduced them again to 292, for 78 total declarations removed.
+- Estimated active audit count fell from 270 to approximately 213; the official external audit remains authoritative.
+- Writer checks passed: diff integrity, balanced CSS, protected selectors/media/reduced-motion presence, and local HTTP loading.
+- Native assessment was unavailable, so independent verification was required.
+- Independent Chrome comparison confirmed computed-style parity with the legacy CSS for key desktop, mobile-menu, hidden, and reduced-motion states.
+- Runtime active declaration count measured 260 including normalize.css and 243 excluding it, so the below-250 acceptance criterion remains unresolved.
+- Verifier browser retries created no repository changes.
+- External commit `f46cfa1` now contains the first CSS split and is synchronized with `origin/main`; the current consolidation remains an uncommitted follow-up on top of that boundary.
+- Final consolidation removed 21 additional authored declarations: normalize 55, shared 128, home 109, total 292.
+- Structural/order checks and local HTTP loading passed with no known cascade deviation.
+- Independent Chrome/CDP initially measured 239 active declarations including normalize.css, passing the threshold.
+- Verification found one desktop regression: spotlight padding was `0` instead of the legacy `22.4px 24px`.
+- Corrected the desktop padding selector to include `.spotlights-section`.
+- Post-correction Chrome/CDP measured 237 active declarations: normalize 17, shared 114, home 106.
+- Desktop spotlight padding and grid columns now match `HEAD` / `f46cfa1` exactly.
+- Navigation current/hover, CTA default/hover, mobile open menu, and reduced-motion parity passed.
+- `git diff --check` passed; temporary verification artifacts were cleaned.
 
 ## Next Step
 
-User may review the uncommitted diff and explicitly request a commit/push when ready.
+User should rerun the official course audit. The follow-up consolidation remains uncommitted and unpushed.
