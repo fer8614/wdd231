@@ -7,11 +7,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  min-width: 320px;
-}
-
 html {
   scroll-behavior: smooth;
 }

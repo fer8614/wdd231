@@ -1,0 +1,340 @@
+.page-intro {
+  padding: 3rem 1rem 3.3rem;
+  background: linear-gradient(120deg, #0e3428f5, #503369e6), #0e3428;
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-intro .eyebrow {
+  margin: 0 0 0.4rem;
+  color: #f0c972;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.page-intro h1 {
+  max-width: 800px;
+  margin: 0 auto 0.5rem;
+  font-size: clamp(2rem, 9vw, 3.7rem);
+  line-height: 1.1;
+}
+
+.page-intro p:last-child {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.join-layout {
+  display: grid;
+  gap: 1.5rem;
+  width: min(100% - 2rem, 1100px);
+  margin: -1.25rem auto 3.5rem;
+}
+
+.application-panel,
+.membership-panel,
+.confirmation-panel {
+  border: 1px solid #d8ded9;
+  border-radius: 0.75rem;
+  background: #ffffff;
+  box-shadow: 0 12px 30px #18372c1c;
+}
+
+.application-panel,
+.membership-panel {
+  padding: 1.25rem;
+}
+
+.application-panel h2,
+.membership-panel h2,
+.confirmation-panel h2 {
+  margin-top: 0;
+  color: #0e3428;
+}
+
+.required-note,
+.membership-panel > p,
+.confirmation-panel > p {
+  color: #58645f;
+}
+
+.application-panel form {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.application-panel label,
+.application-panel legend {
+  color: #263c34;
+  font-weight: 700;
+}
+
+.application-panel input:not([type="radio"]),
+.application-panel textarea {
+  width: 100%;
+  min-height: 44px;
+  margin-bottom: 0.65rem;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #8b9993;
+  border-radius: 0.4rem;
+  background: #ffffff;
+  color: #1d2925;
+  font: inherit;
+}
+
+.application-panel textarea {
+  min-height: 8rem;
+  resize: vertical;
+}
+
+.application-panel input:focus,
+.application-panel textarea:focus {
+  border-color: #174a3a;
+}
+
+.application-panel input:invalid:not(:focus):not(:placeholder-shown) {
+  border-color: #a5423a;
+}
+
+.field-hint {
+  margin: -0.45rem 0 0.75rem;
+  color: #58645f;
+  font-size: 0.86rem;
+}
+
+.application-panel fieldset {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.25rem 0 1rem;
+  padding: 0.85rem 1rem 1rem;
+  border: 1px solid #8b9993;
+  border-radius: 0.4rem;
+}
+
+.radio-option {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: 0.6rem;
+  font-weight: 600;
+}
+
+.radio-option input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: #174a3a;
+}
+
+.submit-button,
+.details-button,
+.close-dialog,
+.return-link {
+  min-height: 44px;
+  border: 2px solid #174a3a;
+  border-radius: 0.4rem;
+  background: #174a3a;
+  color: #ffffff;
+  font-weight: 750;
+}
+
+.submit-button,
+.details-button,
+.close-dialog {
+  padding: 0.65rem 1rem;
+}
+
+.submit-button:hover,
+.details-button:hover,
+.close-dialog:hover,
+.return-link:hover {
+  background: #0e3428;
+  color: #ffffff;
+}
+
+.membership-cards {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.membership-card {
+  padding: 1.15rem;
+  border: 1px solid #d8ded9;
+  border-left: 5px solid #503369;
+  border-radius: 0.65rem;
+  background: #fffdf9;
+}
+
+.membership-card.featured-card {
+  border-left-color: #d39b35;
+  background: #fffaf0;
+}
+
+.card-kicker {
+  margin: 0;
+  color: #503369;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.membership-card h3 {
+  margin: 0.2rem 0 0.35rem;
+  color: #0e3428;
+  font-size: 1.25rem;
+}
+
+.membership-card > p:last-of-type {
+  margin: 0 0 0.85rem;
+  color: #58645f;
+}
+
+.details-button {
+  width: 100%;
+}
+
+.cards-ready .membership-card {
+  animation: card-arrival 0.55s ease-out both;
+}
+
+.cards-ready .membership-card:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.cards-ready .membership-card:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.cards-ready .membership-card:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+@keyframes card-arrival {
+  from {
+    opacity: 0;
+    transform: translateY(0.75rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+dialog {
+  width: min(90vw, 34rem);
+  padding: 0;
+  border: 0;
+  border-radius: 0.75rem;
+  color: #1d2925;
+  box-shadow: 0 18px 50px #071c15a6;
+}
+
+dialog::backdrop {
+  background: #071c15b8;
+}
+
+.dialog-content {
+  padding: 1.5rem;
+}
+
+.dialog-content h2 {
+  margin-top: 0;
+  color: #0e3428;
+}
+
+.dialog-content ul {
+  padding-left: 1.35rem;
+}
+
+.dialog-content li + li {
+  margin-top: 0.45rem;
+}
+
+.close-dialog {
+  display: block;
+  margin-left: auto;
+}
+
+.confirmation-panel {
+  width: min(100% - 2rem, 44rem);
+  margin: -1.25rem auto 3.5rem;
+  padding: 1.4rem;
+}
+
+.submitted-details {
+  margin: 1.25rem 0;
+}
+
+.submitted-details div {
+  display: grid;
+  gap: 0.15rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid #d8ded9;
+}
+
+.submitted-details dt {
+  color: #58645f;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.submitted-details dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+  font-weight: 650;
+}
+
+.return-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  text-decoration: none;
+}
+
+@media (min-width: 48rem) {
+  .page-intro {
+    padding-block: 4.5rem 4.8rem;
+  }
+
+  .page-intro p:last-child {
+    font-size: 1.2rem;
+  }
+
+  .join-layout {
+    grid-template-columns: minmax(0, 1.15fr) minmax(18rem, 0.85fr);
+    align-items: start;
+    gap: 2rem;
+    margin-top: -1.75rem;
+  }
+
+  .application-panel,
+  .membership-panel,
+  .confirmation-panel {
+    padding: 1.5rem;
+  }
+
+  .membership-panel {
+    position: sticky;
+    top: 1rem;
+  }
+
+  .details-button {
+    width: auto;
+  }
+
+  .submitted-details div {
+    grid-template-columns: 12rem 1fr;
+    gap: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cards-ready .membership-card {
+    animation: none;
+  }
+}

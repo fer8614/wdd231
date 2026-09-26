@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Join | Keizer Chamber of Commerce</title>
+  <meta name="description" content="Join the Keizer Chamber of Commerce and choose the membership level that best supports your organization and community goals.">
+  <meta name="author" content="Yesid Fernando Cepeda">
+  <meta property="og:title" content="Join the Keizer Chamber of Commerce">
+  <meta property="og:description" content="Apply for Chamber membership and connect your organization with Keizer's business community.">
+  <meta property="og:image" content="https://fer8614.github.io/wdd231/chamber/images/keizer-directory-og.png">
+  <meta property="og:url" content="https://fer8614.github.io/wdd231/chamber/join.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;family=Source+Sans+3:wght@400;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/join.css">
+  <script src="scripts/site.js" defer></script>
+  <script src="scripts/join.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to membership application</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Keizer Chamber of Commerce home">
+        <img src="images/keizer-chamber-logo.svg" alt="" width="58" height="58">
+        <span><strong>Keizer</strong> Chamber of Commerce</span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu" aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" aria-current="page">Join</a></li>
+          <li><a href="#" aria-disabled="true" title="Discover page coming in a future assignment">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="page-intro" aria-labelledby="join-title">
+      <p class="eyebrow">Build connections. Grow together.</p>
+      <h1 id="join-title">Join the Keizer Chamber</h1>
+      <p>Tell us about your organization and select the membership that fits your goals.</p>
+    </section>
+
+    <div class="join-layout">
+      <section class="application-panel" aria-labelledby="application-heading">
+        <h2 id="application-heading">Membership application</h2>
+        <p class="required-note">All fields marked with <span aria-hidden="true">*</span> are required.</p>
+        <form method="get" action="thankyou.html">
+          <label for="first-name">First name <span aria-hidden="true">*</span></label>
+          <input id="first-name" name="first" type="text" autocomplete="given-name" title="Enter your first name." required>
+
+          <label for="last-name">Last name <span aria-hidden="true">*</span></label>
+          <input id="last-name" name="last" type="text" autocomplete="family-name" title="Enter your last name." required>
+
+          <label for="organization-title">Organizational title</label>
+          <input id="organization-title" name="organization-title" type="text" autocomplete="organization-title" pattern="[A-Za-z \-]{7,}" title="Use at least seven letters, spaces, or hyphens.">
+          <p class="field-hint" id="title-hint">At least seven letters, spaces, or hyphens.</p>
+
+          <label for="email">Email address <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" title="Enter a valid email address." required>
+
+          <label for="phone">Mobile phone number <span aria-hidden="true">*</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" title="Enter your mobile phone number." required>
+
+          <label for="organization">Business or organization name <span aria-hidden="true">*</span></label>
+          <input id="organization" name="organization" type="text" autocomplete="organization" title="Enter your business or organization name." required>
+
+          <fieldset>
+            <legend>Membership level <span aria-hidden="true">*</span></legend>
+            <label class="radio-option" for="membership-np">
+              <input id="membership-np" name="membership" type="radio" value="np" required>
+              NP Membership (no fee)
+            </label>
+            <label class="radio-option" for="membership-bronze">
+              <input id="membership-bronze" name="membership" type="radio" value="bronze">
+              Bronze Membership
+            </label>
+            <label class="radio-option" for="membership-silver">
+              <input id="membership-silver" name="membership" type="radio" value="silver">
+              Silver Membership
+            </label>
+            <label class="radio-option" for="membership-gold">
+              <input id="membership-gold" name="membership" type="radio" value="gold">
+              Gold Membership
+            </label>
+          </fieldset>
+
+          <label for="description">Business or organization description</label>
+          <textarea id="description" name="description" rows="5"></textarea>
+
+          <input id="timestamp" name="timestamp" type="hidden">
+          <button class="submit-button" type="submit">Submit application</button>
+        </form>
+      </section>
+
+      <section class="membership-panel" aria-labelledby="membership-heading">
+        <h2 id="membership-heading">Membership levels</h2>
+        <p>Explore each level to find the benefits that serve your organization.</p>
+        <div class="membership-cards" id="membership-cards">
+          <article class="membership-card">
+            <p class="card-kicker">Community organizations</p>
+            <h3>NP Membership</h3>
+            <p>A no-fee option for qualifying nonprofit organizations.</p>
+            <button class="details-button" type="button" data-dialog="np-dialog">View NP benefits</button>
+          </article>
+          <article class="membership-card">
+            <p class="card-kicker">Essential connections</p>
+            <h3>Bronze Membership</h3>
+            <p>Core Chamber resources for growing local organizations.</p>
+            <button class="details-button" type="button" data-dialog="bronze-dialog">View Bronze benefits</button>
+          </article>
+          <article class="membership-card">
+            <p class="card-kicker">Greater visibility</p>
+            <h3>Silver Membership</h3>
+            <p>Expanded promotion and professional development opportunities.</p>
+            <button class="details-button" type="button" data-dialog="silver-dialog">View Silver benefits</button>
+          </article>
+          <article class="membership-card featured-card">
+            <p class="card-kicker">Premier partnership</p>
+            <h3>Gold Membership</h3>
+            <p>Maximum visibility and access for community leaders.</p>
+            <button class="details-button" type="button" data-dialog="gold-dialog">View Gold benefits</button>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <dialog id="np-dialog" aria-labelledby="np-dialog-title">
+      <div class="dialog-content">
+        <h2 id="np-dialog-title">NP Membership benefits</h2>
+        <ul>
+          <li>Chamber directory listing</li>
+          <li>Invitations to community networking events</li>
+          <li>Access to member news and local resources</li>
+          <li>No annual membership fee for qualifying nonprofits</li>
+        </ul>
+        <button class="close-dialog" type="button">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="bronze-dialog" aria-labelledby="bronze-dialog-title">
+      <div class="dialog-content">
+        <h2 id="bronze-dialog-title">Bronze Membership benefits</h2>
+        <ul>
+          <li>All NP-level benefits</li>
+          <li>Business directory listing with contact details</li>
+          <li>Member pricing for Chamber events</li>
+          <li>Monthly networking opportunities</li>
+        </ul>
+        <button class="close-dialog" type="button">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="silver-dialog" aria-labelledby="silver-dialog-title">
+      <div class="dialog-content">
+        <h2 id="silver-dialog-title">Silver Membership benefits</h2>
+        <ul>
+          <li>All Bronze-level benefits</li>
+          <li>Enhanced directory placement</li>
+          <li>Professional development workshops</li>
+          <li>Social media recognition during the year</li>
+        </ul>
+        <button class="close-dialog" type="button">Close</button>
+      </div>
+    </dialog>
+
+    <dialog id="gold-dialog" aria-labelledby="gold-dialog-title">
+      <div class="dialog-content">
+        <h2 id="gold-dialog-title">Gold Membership benefits</h2>
+        <ul>
+          <li>All Silver-level benefits</li>
+          <li>Homepage spotlight opportunities</li>
+          <li>Priority sponsorship consideration</li>
+          <li>Complimentary admission to select Chamber events</li>
+        </ul>
+        <button class="close-dialog" type="button">Close</button>
+      </div>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Keizer Chamber of Commerce</h2>
+        <address>
+          930 Chemawa Road NE<br>
+          Keizer, OR 97303<br>
+          <a href="mailto:hello@keizerchamber.example">hello@keizerchamber.example</a><br>
+          <a href="tel:+15033900000">(503) 390-0000</a>
+        </address>
+      </section>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Keizer Chamber on Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Keizer Chamber on Instagram">◎</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Keizer Chamber on LinkedIn">in</a>
+      </nav>
+      <div class="project-info">
+        <p>WDD 231 Class Project</p>
+        <p>Yesid Fernando Cepeda</p>
+        <p>&copy; <span id="current-year"></span> Keizer Chamber of Commerce</p>
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

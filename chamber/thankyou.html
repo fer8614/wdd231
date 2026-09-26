@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Business Directory | Keizer Chamber of Commerce</title>
-  <meta name="description" content="Explore trusted local businesses and services in the Keizer, Oregon Chamber of Commerce member directory.">
+  <title>Thank You | Keizer Chamber of Commerce</title>
+  <meta name="description" content="Thank you for applying to join the Keizer Chamber of Commerce. Review the details submitted with your membership application.">
   <meta name="author" content="Yesid Fernando Cepeda">
-  <meta property="og:title" content="Keizer Chamber of Commerce Business Directory">
-  <meta property="og:description" content="Find local businesses, services, and community partners serving Keizer, Oregon.">
+  <meta property="og:title" content="Thank You | Keizer Chamber of Commerce">
+  <meta property="og:description" content="Your Keizer Chamber membership application has been received.">
   <meta property="og:image" content="https://fer8614.github.io/wdd231/chamber/images/keizer-directory-og.png">
-  <meta property="og:url" content="https://fer8614.github.io/wdd231/chamber/directory.html">
+  <meta property="og:url" content="https://fer8614.github.io/wdd231/chamber/thankyou.html">
   <meta property="og:type" content="website">
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,12 +17,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;family=Source+Sans+3:wght@400;600;700;800&amp;display=swap">
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/shared.css">
-  <link rel="stylesheet" href="styles/directory.css">
+  <link rel="stylesheet" href="styles/join.css">
   <script src="scripts/site.js" defer></script>
-  <script src="scripts/directory.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to directory</a>
+  <a class="skip-link" href="#main-content">Skip to application details</a>
   <header class="site-header">
     <div class="header-inner">
       <a class="brand" href="index.html" aria-label="Keizer Chamber of Commerce home">
@@ -35,8 +35,8 @@
       <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="directory.html" aria-current="page">Directory</a></li>
-          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html" aria-current="page">Join</a></li>
           <li><a href="#" aria-disabled="true" title="Discover page coming in a future assignment">Discover</a></li>
         </ul>
       </nav>
@@ -44,32 +44,42 @@
   </header>
 
   <main id="main-content">
-    <section class="page-intro" aria-labelledby="directory-title">
-      <p class="eyebrow">Shop local. Grow together.</p>
-      <h1 id="directory-title">Keizer Business Directory</h1>
-      <p>Meet the businesses helping Oregon's Iris City thrive.</p>
+    <section class="page-intro" aria-labelledby="thankyou-title">
+      <p class="eyebrow">Application received</p>
+      <h1 id="thankyou-title">Thank you for joining us</h1>
+      <p>We appreciate your interest in the Keizer Chamber of Commerce.</p>
     </section>
 
-    <section class="directory-section" aria-labelledby="members-heading">
-      <div class="directory-toolbar">
+    <section class="confirmation-panel" aria-labelledby="details-heading">
+      <h2 id="details-heading">Your application details</h2>
+      <p>A Chamber representative will review your application and contact you soon.</p>
+      <dl class="submitted-details">
         <div>
-          <h2 id="members-heading">Our members</h2>
-          <p id="member-count">Loading member directory…</p>
+          <dt>First name</dt>
+          <dd id="submitted-first">Not provided</dd>
         </div>
-        <div class="view-toggle" role="group" aria-label="Choose directory layout">
-          <button id="grid-view" class="view-button" type="button" aria-pressed="true">
-            <span class="grid-icon" aria-hidden="true">▦</span> Grid
-          </button>
-          <button id="list-view" class="view-button" type="button" aria-pressed="false">
-            <span aria-hidden="true">☷</span> List
-          </button>
+        <div>
+          <dt>Last name</dt>
+          <dd id="submitted-last">Not provided</dd>
         </div>
-      </div>
-      <div id="directory" class="member-directory grid-view" aria-live="polite" aria-busy="true"></div>
-      <div id="directory-error" class="directory-error" role="alert" hidden>
-        <h2>We couldn't load the directory.</h2>
-        <p>Please refresh the page or try again in a few moments. If the problem continues, call us at <a href="tel:+15033900000">(503) 390-0000</a>.</p>
-      </div>
+        <div>
+          <dt>Email address</dt>
+          <dd id="submitted-email">Not provided</dd>
+        </div>
+        <div>
+          <dt>Mobile phone</dt>
+          <dd id="submitted-phone">Not provided</dd>
+        </div>
+        <div>
+          <dt>Business or organization</dt>
+          <dd id="submitted-organization">Not provided</dd>
+        </div>
+        <div>
+          <dt>Submitted</dt>
+          <dd id="submitted-timestamp">Not provided</dd>
+        </div>
+      </dl>
+      <a class="return-link" href="index.html">Return to Chamber home</a>
     </section>
   </main>
 
