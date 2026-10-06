@@ -72,8 +72,9 @@ p { max-width: 72ch; }
   background: #f3f6fa;
 }
 .accent-note { border-top: 2px solid #155fc2; padding-top: 1rem; }
-.wireframe-figure { margin: 0; }
-.wireframe-figure img { display: block; width: 100%; height: auto; }
+.wireframes { display: grid; gap: 1.5rem; }
+.wireframe-figure { margin: 0; min-width: 0; }
+.wireframe-figure img { display: block; max-width: 100%; height: auto; }
 .wireframe-figure figcaption { margin-top: .75rem; }
 a { color: #155fc2; text-decoration: underline; }
 a:focus-visible { outline: 3px solid #155fc2; outline-offset: 3px; }
@@ -82,4 +83,5 @@ a:focus-visible { outline: 3px solid #155fc2; outline-offset: 3px; }
 @media (min-width: 48rem) {
   .palette { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .layout-notes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .wireframes { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
