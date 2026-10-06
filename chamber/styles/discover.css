@@ -1,0 +1,76 @@
+.discover-main {
+  width: min(100% - 2rem, 1100px);
+  margin: 2rem auto;
+}
+.discover-intro { margin-bottom: 1.5rem; }
+.discover-intro h1 { color: #0e3428; margin-bottom: 0.5rem; }
+.visit-message {
+  padding: 0.8rem 1rem;
+  background: #f9eccd;
+  border-left: 4px solid #d39b35;
+}
+.places-grid { display: grid; gap: 1.5rem; }
+.place-card {
+  display: grid;
+  grid-template-areas: "title" "photo" "address" "description" "action";
+  gap: 0.8rem;
+  padding: 1rem;
+  min-width: 0;
+  background: #fff;
+  border: 1px solid #cdd6d0;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 12px #0e34280d;
+}
+.place-card h2 { grid-area: title; margin: 0; color: #0e3428; font-size: 1.35rem; }
+.place-card figure { grid-area: photo; margin: 0; min-width: 0; }
+.place-card img { width: 300px; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 0.3rem; }
+.place-card figcaption { font-size: 0.8rem; line-height: 1.4; margin-top: 0.5rem; overflow-wrap: anywhere; }
+.place-card figcaption span { display: block; }
+.place-card address { grid-area: address; font-style: normal; }
+.place-description { grid-area: description; margin: 0; }
+.place-card button { grid-area: action; align-self: end; }
+.place-card button, .place-dialog button {
+  min-height: 44px;
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 0.3rem;
+  background: #0e3428;
+  color: #fff;
+  font-weight: 700;
+}
+.place-card button:hover, .place-dialog button:hover { background: #503369; }
+.place-dialog {
+  width: min(100% - 2rem, 560px);
+  max-height: calc(100% - 2rem);
+  padding: 1.5rem;
+  border: 2px solid #d39b35;
+  border-radius: 0.6rem;
+  background: #fffdf9;
+  color: #1d2925;
+  overflow-wrap: anywhere;
+}
+.place-dialog::backdrop { background: #0e3428b3; }
+.place-dialog h2 { margin-top: 0; }
+.place-dialog address { font-style: normal; }
+@media (min-width: 641px) {
+  .place-card {
+    grid-template-columns: 300px minmax(0, 1fr);
+    grid-template-areas: "photo title" "photo address" "photo description" "photo action";
+    column-gap: 1.25rem;
+  }
+}
+@media (min-width: 1025px) {
+  .places-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .place-card {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-areas: "title title" "photo photo" "address description" "action action";
+  }
+  .place-card img { margin-inline: auto; }
+}
+@media (min-width: 641px) and (hover: hover) and (pointer: fine) {
+  .place-card img { transition: filter 0.2s ease; }
+  .place-card img:hover { filter: brightness(1.08) saturate(1.2); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .place-card img { transition: none; }
+}

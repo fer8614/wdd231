@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discover | Keizer Chamber of Commerce</title>
+  <meta name="description"
+    content="Discover eight places in Keizer and nearby Salem, Oregon. Explore parks, local history, shopping and gardens, with visitor links to plan your trip.">
+  <meta name="author" content="Yesid Fernando Cepeda">
+  <meta property="og:title" content="Discover | Keizer Chamber of Commerce">
+  <meta property="og:description"
+    content="Explore Keizer and nearby Salem: eight local destinations with photos and visitor information.">
+  <meta property="og:image" content="https://fer8614.github.io/wdd231/chamber/images/keizer-directory-og.png">
+  <meta property="og:url" content="https://fer8614.github.io/wdd231/chamber/discover.html">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&amp;family=Source+Sans+3:wght@400;600;700;800&amp;display=swap">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/shared.css">
+  <link rel="stylesheet" href="styles/discover.css">
+  <script src="scripts/site.js" defer></script>
+  <script type="module" src="scripts/discover.js"></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Keizer Chamber of Commerce home">
+        <img src="images/keizer-chamber-logo.svg" alt="" width="58" height="58">
+        <span><strong>Keizer</strong> Chamber of Commerce</span>
+      </a>
+      <button class="menu-button" id="menu-button" type="button" aria-label="Open navigation menu"
+        aria-controls="primary-navigation" aria-expanded="false">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="primary-navigation" class="primary-navigation" aria-label="Primary navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html" aria-current="page">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="discover-main">
+    <section class="discover-intro" aria-labelledby="discover-title">
+      <h1 id="discover-title">Discover Keizer &amp; nearby Salem</h1>
+      <p>Find your next stop in Oregon's Iris City, with a few regional destinations nearby.
+        Salem attractions and gardens outside Keizer are identified below.</p>
+      <p id="visit-message" class="visit-message" role="status">Welcome! Let us know if you have any questions.</p>
+    </section>
+    <div id="places" class="places-grid"></div>
+    <noscript><p>Enable JavaScript to explore our eight destinations and their visitor links.</p></noscript>
+    <dialog id="place-dialog" class="place-dialog" aria-labelledby="dialog-title">
+      <h2 id="dialog-title">Plan your visit</h2>
+      <address id="dialog-address"></address>
+      <p id="dialog-description"></p>
+      <p>Check the visitor source for current access, hours, seasonal openings and any admission requirements before traveling.</p>
+      <p><a id="dialog-link">Visitor website</a></p>
+      <form method="dialog"><button type="submit" autofocus>Close</button></form>
+    </dialog>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Keizer Chamber of Commerce</h2>
+        <address>
+          930 Chemawa Road NE<br>
+          Keizer, OR 97303<br>
+          <a href="mailto:hello@keizerchamber.example">hello@keizerchamber.example</a><br>
+          <a href="tel:+15033900000">(503) 390-0000</a>
+        </address>
+      </section>
+      <nav class="social-links" aria-label="Social media">
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Keizer Chamber on Facebook">f</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Keizer Chamber on Instagram">◎</a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+          aria-label="Keizer Chamber on LinkedIn">in</a>
+      </nav>
+      <div class="project-info">
+        <p>WDD 231 Class Project</p>
+        <p>Yesid Fernando Cepeda</p>
+        <p>&copy; <span id="current-year"></span> Keizer Chamber of Commerce</p>
+        <p id="last-modified"></p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
