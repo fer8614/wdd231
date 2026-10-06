@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site plan for Video Game Guide, a game discovery website.">
+  <title>Video Game Guide | Site Plan</title>
+  <link rel="stylesheet" href="styles/site-plan.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <p class="eyebrow">WDD 231 · Website planning</p>
+      <h1>Video Game Guide</h1>
+      <p class="lead">A clear path from “What should I play?” to a game worth exploring.</p>
+    </div>
+  </header>
+  <main class="container">
+    <section aria-labelledby="identity">
+      <h2 id="identity">Site name &amp; purpose</h2>
+      <p><strong>Video Game Guide</strong> tells visitors exactly what the site offers: guidance for discovering video games. The name is easy to remember and broad enough to cover different genres and platforms.</p>
+      <p>The site will help players find games that fit their interests by browsing genres, platforms, ratings, and short descriptions. A home page will introduce the experience, a games catalog will support discovery, and game details will help visitors decide what to try next.</p>
+    </section>
+
+    <section aria-labelledby="scenarios">
+      <h2 id="scenarios">Visitor scenarios</h2>
+      <ol class="scenario-list">
+        <li>“I have a Nintendo Switch and want an adventure game. Which games match my platform and genre?”</li>
+        <li>“I want a highly rated RPG. What is it about, and does its description sound right for me?”</li>
+        <li>“I enjoyed one featured game. Where can I find more games to compare?”</li>
+      </ol>
+    </section>
+
+    <section aria-labelledby="visual-design">
+      <h2 id="visual-design">Visual direction</h2>
+      <p>Deep navy anchors the page, bright blue highlights discovery actions, and a pale background keeps game information easy to scan.</p>
+      <h3>Color palette</h3>
+      <ul class="palette">
+        <li class="swatch swatch-navy"><strong>Deep navy · #14243B</strong><span>Headings and the header; shown here in the page banner.</span></li>
+        <li class="swatch swatch-blue"><strong>Action blue · #155FC2</strong><span>Links and primary calls to action; shown in the accent below.</span></li>
+        <li class="swatch swatch-light"><strong>Cloud · #F3F6FA</strong><span>Page background and quiet section contrast.</span></li>
+      </ul>
+      <h3>Typography</h3>
+      <p><strong>Arial</strong> (with Helvetica and generic sans-serif fallbacks) is the only font family. Bold weights distinguish headings and game titles; regular weight keeps descriptions and supporting information readable. This page uses the same type choices.</p>
+    </section>
+
+    <section aria-labelledby="home-layout">
+      <h2 id="home-layout">Home page layout by screen size</h2>
+      <div class="layout-notes">
+        <div>
+          <h3>Small screens</h3>
+          <p>A compact title and navigation lead into a stacked hero: discovery message, short introduction, browse action, then game imagery. A brief row of discovery cues precedes featured games in a single-column list. Each item shows its title, genre, platform, rating, and a route to more details.</p>
+        </div>
+        <div>
+          <h3>Large screens</h3>
+          <p>The header places the name and navigation side by side. The hero pairs introduction and browse action with game imagery horizontally. Discovery cues sit across a row; featured games appear in a multi-column group with a clear link to the catalog. The catalog will organize browsing, and a separate details view will expand on each game's description and rating.</p>
+        </div>
+      </div>
+      <p class="accent-note">The home page introduces discovery; catalog browsing and game details are planned destinations, not part of this site plan's implementation.</p>
+    </section>
+
+    <section aria-labelledby="wireframe">
+      <h2 id="wireframe">Desktop and mobile three-page proposal</h2>
+      <figure class="wireframe-figure">
+        <img src="images/wireframe.png" width="1536" height="1024" loading="lazy" alt="Six proposed layouts: desktop Home, Games catalog, and Game Details above their mobile versions, showing discovery cards, catalog filters, and a favorites action.">
+        <figcaption>The top row shows desktop layouts; the bottom row shows mobile layouts. In each row, Home is on the left, Games catalog is in the center, and Game Details is on the right.</figcaption>
+      </figure>
+      <p><a href="images/wireframe.png">Open the original-size proposal to zoom in and read the details.</a></p>
+      <ul>
+        <li><strong>Home:</strong> Introduce game discovery with a browse action, genre and platform highlights, ratings, and featured games.</li>
+        <li><strong>Games catalog:</strong> Search and sort games, filter by genre, platform, and minimum rating, and open a game's details. Desktop uses a filter sidebar and card grid; mobile uses a filters control and a compact list.</li>
+        <li><strong>Game Details:</strong> Show the game's description, platform, rating, game information, screenshots, user reviews, and similar games, with an Add to Favorites action. Mobile stacks the content with expandable information sections.</li>
+      </ul>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container">Video Game Guide · Site plan</div></footer>
+</body>
+</html>
