@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Browse the collection | Video Game Guide</title>
+  <meta name="description" content="Search fifteen real games by genre, platform, and editorial discovery score. Save favorites and explore each game in a quick view.">
+  <meta name="author" content="Yesid Fernando Cepeda">
+  <meta property="og:title" content="Browse the collection | Video Game Guide">
+  <meta property="og:description" content="Find your fit: search, filter, and save a personal shortlist of memorable games.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fer8614.github.io/wdd231/final/games.html">
+  <meta property="og:image" content="https://fer8614.github.io/wdd231/final/images/hollow-knight.webp">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/app.mjs"></script>
+</head>
+<body data-page="catalog">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/favicon.svg" width="40" height="40" alt="">Video Game <span>Guide</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden><span aria-hidden="true">☰</span> Menu</button>
+    <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="games.html" aria-current="page">Games</a><a href="game.html?id=stardew-valley">Game Details</a></nav>
+  </div></header>
+  <main id="main" class="container section">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Games</p><p class="eyebrow">Your next discovery</p><h1>A game for your kind of evening.</h1><p class="lead">Explore the collection. Narrow it down. Keep the ones that catch your eye.</p>
+    <div class="catalog-layout">
+      <aside class="filter-panel" aria-labelledby="filter-title"><h2 id="filter-title">Find your fit</h2>
+        <form id="filters" role="search">
+          <label for="search">Search games</label><input id="search" name="search" type="search" placeholder="Title or keyword" autocomplete="off">
+          <label for="genre">Genre</label><select id="genre" name="genre"><option value="">All genres</option></select>
+          <label for="platform">Platform</label><select id="platform" name="platform"><option value="">All platforms</option></select>
+          <label for="minimum">Minimum editorial score</label><select id="minimum" name="minimum"><option value="0">Any score</option><option value="9">9.0 and above</option><option value="9.5">9.5 and above</option></select>
+          <label for="sort">Sort by</label><select id="sort" name="sort"><option value="title">Title: A–Z</option><option value="rating">Editorial score: highest first</option></select>
+          <label class="checkbox" for="savedOnly"><input id="savedOnly" name="savedOnly" type="checkbox">Saved games only</label>
+          <button type="reset" class="button secondary">Reset filters</button>
+        </form><p class="fine-print">Scores are guide editorial discovery recommendations: subjective demonstrations, not aggregated ratings or personal opinions authored by Yesid Fernando Cepeda.</p>
+      </aside>
+      <section class="catalog-results" aria-label="Game results"><p id="results-status" role="status">Loading the collection…</p><div id="game-grid" class="game-grid"></div><div id="empty-state" class="empty-state" hidden><h2>No games match just yet.</h2><p>Try a different keyword or widen your filters.</p><button id="reset-empty" class="button" type="button">Show all games</button></div><noscript><p>Enable JavaScript to search the collection and save favorites.</p></noscript></section>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="container"><p class="brand">Video Game Guide</p><p>Discover thoughtfully. Play your own way.</p><p>© <span id="year">2026</span> Yesid Fernando Cepeda · <a href="game-guide.html">Site plan</a> · <a href="sources.html">Sources &amp; credits</a></p><p class="fine-print">Game artwork belongs to its respective rights holders. Steam source links are available in each quick view.</p></div></footer>
+  <dialog id="quick-view" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close quick view">Close ×</button><div id="dialog-content"></div></dialog>
+  <p id="save-status" class="save-status" role="status"></p>
+</body>
+</html>

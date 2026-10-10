@@ -1,0 +1,298 @@
+[
+  {
+    "id": "stardew-valley",
+    "title": "Stardew Valley",
+    "genre": "Simulation",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.5,
+    "description": "Turn an inherited farm into a home. Grow crops, explore mines, and build friendships at your own pace.",
+    "developer": "ConcernedApe",
+    "appId": 413150,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/413150/header.jpg",
+    "source": "https://store.steampowered.com/app/413150/",
+    "image": "images/stardew-valley.webp",
+    "artCredit": "Steam store header artwork; ConcernedApe and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "hollow-knight",
+    "title": "Hollow Knight",
+    "genre": "Adventure",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.4,
+    "description": "Explore a fallen insect kingdom through precise combat, hidden paths, and atmospheric hand-drawn caverns.",
+    "developer": "Team Cherry",
+    "appId": 367520,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/367520/header.jpg",
+    "source": "https://store.steampowered.com/app/367520/",
+    "image": "images/hollow-knight.webp",
+    "artCredit": "Steam store header artwork; Team Cherry and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "hades",
+    "title": "Hades",
+    "genre": "Action",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.6,
+    "description": "Fight your way out of the Greek underworld. Each attempt brings new powers, conversations, and another chance to escape.",
+    "developer": "Supergiant Games",
+    "appId": 1145360,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/1145360/header.jpg",
+    "source": "https://store.steampowered.com/app/1145360/",
+    "image": "images/hades.webp",
+    "artCredit": "Steam store header artwork; Supergiant Games and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "celeste",
+    "title": "Celeste",
+    "genre": "Platformer",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.2,
+    "description": "Climb a daunting mountain in a precise platforming adventure about perseverance. Assist options let you tailor the challenge.",
+    "developer": "Maddy Makes Games",
+    "appId": 504230,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/504230/header.jpg",
+    "source": "https://store.steampowered.com/app/504230/",
+    "image": "images/celeste.webp",
+    "artCredit": "Steam store header artwork; Maddy Makes Games and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "portal-2",
+    "title": "Portal 2",
+    "genre": "Puzzle",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "rating": 9.7,
+    "description": "Bend space with a portal gun to solve ingenious test chambers, with a separate cooperative campaign for two players.",
+    "developer": "Valve",
+    "appId": 620,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/620/header.jpg",
+    "source": "https://store.steampowered.com/app/620/",
+    "image": "images/portal-2.webp",
+    "artCredit": "Steam store header artwork; Valve and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "terraria",
+    "title": "Terraria",
+    "genre": "Sandbox",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.1,
+    "description": "Dig, craft, and build in a sprawling two-dimensional world filled with strange creatures and powerful bosses.",
+    "developer": "Re-Logic",
+    "appId": 105600,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/105600/header.jpg",
+    "source": "https://store.steampowered.com/app/105600/",
+    "image": "images/terraria.webp",
+    "artCredit": "Steam store header artwork; Re-Logic and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "slay-the-spire",
+    "title": "Slay the Spire",
+    "genre": "Strategy",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.3,
+    "description": "Build a deck as you climb a dangerous tower. Weigh every card, route, and relic in turn-based encounters.",
+    "developer": "Mega Crit",
+    "appId": 646570,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/646570/header.jpg",
+    "source": "https://store.steampowered.com/app/646570/",
+    "image": "images/slay-the-spire.webp",
+    "artCredit": "Steam store header artwork; Mega Crit and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "baldurs-gate-3",
+    "title": "Baldur’s Gate 3",
+    "genre": "RPG",
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.6,
+    "description": "Gather a party for a choice-driven fantasy adventure, with tactical turn-based combat and richly branching quests.",
+    "developer": "Larian Studios",
+    "appId": 1086940,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/1086940/header.jpg",
+    "source": "https://store.steampowered.com/app/1086940/",
+    "image": "images/baldurs-gate-3.webp",
+    "artCredit": "Steam store header artwork; Larian Studios and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "elden-ring",
+    "title": "Elden Ring",
+    "genre": "RPG",
+    "platforms": [
+      "PC",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.4,
+    "description": "Chart your own path across the Lands Between, discovering vast landscapes and demanding battles in an open-world RPG.",
+    "developer": "FromSoftware",
+    "appId": 1245620,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/1245620/header.jpg",
+    "source": "https://store.steampowered.com/app/1245620/",
+    "image": "images/elden-ring.webp",
+    "artCredit": "Steam store header artwork; FromSoftware and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "outer-wilds",
+    "title": "Outer Wilds",
+    "genre": "Adventure",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.5,
+    "description": "Investigate a small solar system caught in a time loop. Curiosity and knowledge are your most important tools.",
+    "developer": "Mobius Digital",
+    "appId": 753640,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/753640/header.jpg",
+    "source": "https://store.steampowered.com/app/753640/",
+    "image": "images/outer-wilds.webp",
+    "artCredit": "Steam store header artwork; Mobius Digital and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "a-short-hike",
+    "title": "A Short Hike",
+    "genre": "Adventure",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 8.8,
+    "description": "Walk, climb, and glide around a peaceful island park. Meet fellow hikers while finding your own route to the summit.",
+    "developer": "adamgryu",
+    "appId": 1055540,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/1055540/header.jpg",
+    "source": "https://store.steampowered.com/app/1055540/",
+    "image": "images/a-short-hike.webp",
+    "artCredit": "Steam store header artwork; adamgryu and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "unpacking",
+    "title": "Unpacking",
+    "genre": "Puzzle",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 8.7,
+    "description": "Unpack belongings into new homes and piece together a life through everyday objects in a quiet environmental puzzle.",
+    "developer": "Witch Beam",
+    "appId": 1135690,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/1135690/header.jpg",
+    "source": "https://store.steampowered.com/app/1135690/",
+    "image": "images/unpacking.webp",
+    "artCredit": "Steam store header artwork; Witch Beam and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "disco-elysium",
+    "title": "Disco Elysium — The Final Cut",
+    "genre": "RPG",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9.3,
+    "description": "Solve a murder as a troubled detective. Conversations, competing inner voices, and difficult choices shape the investigation.",
+    "developer": "ZA/UM",
+    "appId": 632470,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/632470/header.jpg",
+    "source": "https://store.steampowered.com/app/632470/",
+    "image": "images/disco-elysium.webp",
+    "artCredit": "Steam store header artwork; ZA/UM and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "civilization-vi",
+    "title": "Sid Meier’s Civilization VI",
+    "genre": "Strategy",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 8.9,
+    "description": "Guide a civilization from its first settlement into the future through research, diplomacy, expansion, and turn-based strategy.",
+    "developer": "Firaxis Games",
+    "appId": 289070,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/289070/header.jpg",
+    "source": "https://store.steampowered.com/app/289070/",
+    "image": "images/civilization-vi.webp",
+    "artCredit": "Steam store header artwork; Firaxis Games and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  },
+  {
+    "id": "dead-cells",
+    "title": "Dead Cells",
+    "genre": "Action",
+    "platforms": [
+      "PC",
+      "Switch",
+      "PlayStation",
+      "Xbox"
+    ],
+    "rating": 9,
+    "description": "Find weapons and master swift combat in a shifting castle. Failed runs become lessons for the next attempt.",
+    "developer": "Motion Twin",
+    "appId": 588650,
+    "artSource": "https://cdn.akamai.steamstatic.com/steam/apps/588650/header.jpg",
+    "source": "https://store.steampowered.com/app/588650/",
+    "image": "images/dead-cells.webp",
+    "artCredit": "Steam store header artwork; Motion Twin and respective rights holders.",
+    "ratingBasis": "Guide editorial discovery recommendation score out of 10: a subjective demonstration recommendation, not aggregated ratings or a personal opinion authored by Yesid Fernando Cepeda."
+  }
+]

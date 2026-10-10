@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Game details and recommendations | Video Game Guide</title>
+  <meta name="description" content="Explore a selected game's platforms, developer, official artwork and editorial recommendation, then discover related games.">
+  <meta name="author" content="Yesid Fernando Cepeda">
+  <meta property="og:title" content="Game details and recommendations | Video Game Guide">
+  <meta property="og:description" content="Meet your next discovery, check its official source, and explore similar games.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fer8614.github.io/wdd231/final/game.html">
+  <meta property="og:image" content="https://fer8614.github.io/wdd231/final/images/stardew-valley.webp">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/site.css">
+  <script type="module" src="scripts/game.mjs"></script>
+</head>
+<body data-page="details">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="index.html"><img src="images/favicon.svg" width="40" height="40" alt="">Video Game <span>Guide</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden><span aria-hidden="true">☰</span> Menu</button>
+    <nav id="navigation" aria-label="Main navigation"><a href="index.html">Home</a><a href="games.html">Games</a><a href="game.html?id=stardew-valley" aria-current="page">Game Details</a></nav>
+  </div></header>
+  <main id="main" class="container section">
+    <p class="breadcrumb"><a href="index.html">Home</a> / <a href="games.html">Games</a> / Details</p>
+    <h1 id="detail-title">Game details</h1><p id="detail-status" role="status">Loading your discovery…</p>
+    <div id="detail-content"></div><p><a href="games.html">Browse the full catalog →</a></p>
+    <noscript><p>Enable JavaScript to see selected-game details. The default selection is Stardew Valley.</p></noscript>
+    <section id="similar" class="section" aria-labelledby="similar-title" hidden><h2 id="similar-title">More to explore</h2><p>Related picks prioritize the same genre, then shared platforms. These are discovery suggestions, not claims of identical gameplay.</p><div id="similar-grid" class="game-grid"></div></section>
+    <section id="feedback" class="form-panel" aria-labelledby="feedback-title" hidden>
+      <h2 id="feedback-title">Try a recommendation form</h2>
+      <p id="form-note">This educational form shows a confirmation locally. It sends no message to a service and stores no personal data in the app. GET places entries in the URL and browser history; use sample details, not private information. No reply will be sent.</p>
+      <form id="recommendation-form" action="thank-you.html" method="get" aria-describedby="form-note">
+        <label for="selected-game">Selected game</label><input id="selected-game" name="game" readonly>
+        <label for="name">Name (required)</label><input id="name" name="name" type="text" autocomplete="name" maxlength="100" required>
+        <label for="email">Email (required)</label><input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        <label for="preferred-platform">Preferred platform (required)</label><select id="preferred-platform" name="platform" required><option value="">Choose a platform</option></select>
+        <label for="message">Message or game recommendation (required)</label><textarea id="message" name="message" rows="5" maxlength="2000" required></textarea>
+        <button class="button" type="submit">Show local confirmation →</button>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p class="brand">Video Game Guide</p><p>Discover thoughtfully. Play your own way.</p><p>© <span id="year">2026</span> Yesid Fernando Cepeda · <a href="game-guide.html">Site plan</a> · <a href="sources.html">Sources &amp; credits</a></p><p class="fine-print">Artwork belongs to its respective rights holders. Recommendations are subjective demonstration scores, not player reviews.</p></div></footer>
+  <dialog id="quick-view" aria-labelledby="dialog-title"><button class="dialog-close" type="button" aria-label="Close quick view">Close ×</button><div id="dialog-content"></div></dialog>
+  <p id="save-status" class="save-status" role="status"></p>
+</body>
+</html>
