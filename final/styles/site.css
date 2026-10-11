@@ -1,4 +1,4 @@
-/* Shared visual system: navy, action blue, cloud, and readable Arial. */
+/* Shared visual system: navy, action blue, cloud, and readable Roboto with Arial fallback. */
 .detail-layout { display: grid; gap: 28px; margin-block: 28px; }
 .detail-layout > img { width: 100%; border-radius: 12px; }
 .form-panel { max-width: 760px; padding: 24px; background: white; border: 1px solid var(--line); border-radius: 12px; }
@@ -14,7 +14,7 @@ textarea { resize: vertical; }
 
 :root { color-scheme: light; --navy: #14243b; --blue: #155fc2; --cloud: #f3f6fa; --muted: #526175; --line: #d5deea; }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--cloud); color: var(--navy); font: 16px/1.6 Arial, Helvetica, sans-serif; }
+body { margin: 0; background: var(--cloud); color: var(--navy); font: 16px/1.6 "Roboto", Arial, Helvetica, sans-serif; }
 img { display: block; max-width: 100%; height: auto; }
 a { color: var(--blue); text-underline-offset: 4px; }
 a:hover { text-decoration-thickness: 2px; }
